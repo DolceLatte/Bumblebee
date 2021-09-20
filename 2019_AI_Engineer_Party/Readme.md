@@ -1,7 +1,8 @@
 # 2019_AI_Engineer_Party
 
-옛날거지만, 한번 풀어보자
+#### 옛날거지만, 한번 풀어보자
 
+<li>
 요구사항1. Serverless API(Google Functions, Azure Functions, AWS Lambda)로 머신러닝 모델 CPU 서빙
 
 Google Functions
@@ -21,3 +22,4 @@ experiment_id-trial_id
 
 pycharm 가이드라인을 모두 따름
 서빙할 딥러닝 모델은 뭐든 상관없습니다. MNIST, 얼굴 인식, Object Detection
+</li>
