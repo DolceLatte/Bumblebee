@@ -1,8 +1,7 @@
 # 2019_AI_Engineer_Party
 
 #### 옛날거지만, 한번 풀어보자
-
-- Machine Learning Serving Pipeline 구축
+Machine Learning Serving Pipeline 구축
 
 <li>
 요구사항1. Serverless API(Google Functions, Azure Functions, AWS Lambda)로 머신러닝 모델 CPU 서빙
