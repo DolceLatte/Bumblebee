@@ -7,5 +7,5 @@
   - TensorFlow Data Validation : Data Vaildation tool in TFX
   - What if tool : Model understanding
 - [DevOps CI/CD in k8s](https://github.com/DolceLatte/Bumblebee/tree/main/DevOps)
-### What is Machine Learning Pipeline
+
 
