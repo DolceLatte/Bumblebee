@@ -41,6 +41,11 @@ tfdv.visualize_statistics(train_stats)
 
 ## 2. What-if-tool [repo](https://github.com/PAIR-code/what-if-tool)
 ML 모델을 쉽게 분석할 수 있는 Google의 오픈 소스 도구
+1. 기계 학습 모델을 검사, 평가 및 비교
+2. 개별 데이터 포인트에 대한 정보를 분석 할 수 있음
+3. 개별 데이터 포인트의 유사성 확인 가능
 
-#### [Source code]()
+
+#### [Source code](https://github.com/DolceLatte/Bumblebee/blob/main/MLOps_ML_Pipeline/WIT.ipynb)
+DATASET [UCI 인구 조사 데이터](http://archive.ics.uci.edu/ml/datasets/Census+Income)
 <img width="1367" alt="스크린샷 2021-09-21 오후 3 56 17" src="https://user-images.githubusercontent.com/45285053/134125379-d5839d1a-38cb-422f-baac-5e668a9d298d.png">
