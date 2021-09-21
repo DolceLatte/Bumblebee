@@ -39,3 +39,4 @@ tfdv.visualize_statistics(train_stats)
 <img width="769" alt="스크린샷 2021-09-21 오후 3 08 27" src="https://user-images.githubusercontent.com/45285053/134120244-a0c52394-a7f3-4682-886c-8275d4d0af58.png">
 데이터의 infinity_norm.threshold을 지정해 스큐에 대한 조정을 수행
 
+## 2. What-if-tool [repo](https://github.com/PAIR-code/what-if-tool)
