@@ -1,8 +1,9 @@
 # MLOps Machine Learning Pipeline
 
-## 1. TensorFlow Data Validation [repo](https://github.com/tensorflow/data-validation) [Source code](https://github.com/DolceLatte/Bumblebee/blob/main/MLOps_ML_Pipeline/TFDV.ipynb)
+## 1. TensorFlow Data Validation [repo](https://github.com/tensorflow/data-validation)
 TFDV(TensorFlow Data Validation)는 기계 학습 데이터를 탐색하고 검증하기 위한 라이브러리
 
+[Source code](https://github.com/DolceLatte/Bumblebee/blob/main/MLOps_ML_Pipeline/TFDV.ipynb)
 #### TFDV example : [택시 여행 데이터 세트](https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew)
 ##### USAGE
 **1. 훈련 및 테스트 데이터의 요약 통계에 대한 확장 가능한 계산**
