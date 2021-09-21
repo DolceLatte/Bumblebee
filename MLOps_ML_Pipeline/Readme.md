@@ -34,6 +34,6 @@ tfdv.visualize_statistics(train_stats)
 1. 스키마 스큐 :
 2. 피쳐 스큐 :
 3. 분포 스큐 : example 
-![image](https://user-images.githubusercontent.com/45285053/134120089-f3fd48ca-cd22-4cb2-a4b1-f53893be9ea7.png)
+
 데이터의 infinity_norm.threshold을 지정해 스큐에 대한 조정을 수행
 
