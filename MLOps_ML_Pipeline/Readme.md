@@ -23,5 +23,6 @@ tfdv.visualize_statistics(train_stats)
 ![스크린샷 2021-09-21 오후 2 35 25](https://user-images.githubusercontent.com/45285053/134116778-3f11356f-6be9-4155-953f-7bbc2f5a4adc.png)
 
 - 평가 데이터 오류 확인 : 훈련데이터와 평가데이터의 데이터 비교를 통해 vaildation을 수행
+<img width="786" alt="스크린샷 2021-09-21 오후 2 47 33" src="https://user-images.githubusercontent.com/45285053/134118527-35a947b6-9f24-481a-9d6e-18f24beb691f.png">
 
 **3. 데이터 드리프트, 스큐 확인**
