@@ -19,7 +19,7 @@ tfdv.visualize_statistics(train_stats)
 <img width="692" alt="스크린샷 2021-09-21 오후 2 28 58" src="https://user-images.githubusercontent.com/45285053/134116324-61bb3a38-7819-458d-8fe2-24557a72032e.png">
 
 **2. 데이터 셋의 스키마 추론과 평가, 환경을 구성하여 요구사항을 표현할 수 있음**
-<br/>TFDV를 통해 스키마의 도메인에 대한 제약조건을 정의 가능
+<br/>- TFDV를 통해 스키마의 도메인에 대한 제약조건을 정의 가능
 ![스크린샷 2021-09-21 오후 2 35 25](https://user-images.githubusercontent.com/45285053/134116778-3f11356f-6be9-4155-953f-7bbc2f5a4adc.png)
 
 - 평가 데이터 오류 확인
