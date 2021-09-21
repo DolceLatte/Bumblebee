@@ -22,6 +22,6 @@ tfdv.visualize_statistics(train_stats)
 <br/>- TFDV를 통해 스키마의 도메인에 대한 제약조건을 정의 가능
 ![스크린샷 2021-09-21 오후 2 35 25](https://user-images.githubusercontent.com/45285053/134116778-3f11356f-6be9-4155-953f-7bbc2f5a4adc.png)
 
-- 평가 데이터 오류 확인
+- 평가 데이터 오류 확인 : 훈련데이터와 평가데이터의 데이터 비교를 통해 vaildation을 수행
 
 **3. 데이터 드리프트, 스큐 확인**
