@@ -29,5 +29,7 @@ tfdv.visualize_statistics(train_stats)
 <img width="1370" alt="스크린샷 2021-09-21 오후 2 56 40" src="https://user-images.githubusercontent.com/45285053/134119291-1c69ac74-8923-415b-b47c-77c4f867af63.png">
 
 **3. 데이터 드리프트, 스큐 확인**
-입력되는 데이터의 임계 : 드리프트
-입력되는 데이터의 편향 정도: 스큐
+<br/>입력되는 데이터의 임계 : 드리프트
+<br/>입력되는 데이터의 편향 정도: 스큐
+
+
