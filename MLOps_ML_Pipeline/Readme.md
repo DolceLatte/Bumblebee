@@ -40,5 +40,7 @@ tfdv.visualize_statistics(train_stats)
 데이터의 infinity_norm.threshold을 지정해 스큐에 대한 조정을 수행
 
 ## 2. What-if-tool [repo](https://github.com/PAIR-code/what-if-tool)
+ML 모델을 쉽게 분석할 수 있는 Google의 오픈 소스 도구
 
+#### [Source code]()
 <img width="1367" alt="스크린샷 2021-09-21 오후 3 56 17" src="https://user-images.githubusercontent.com/45285053/134125379-d5839d1a-38cb-422f-baac-5e668a9d298d.png">
