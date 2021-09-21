@@ -25,4 +25,9 @@ tfdv.visualize_statistics(train_stats)
 - 평가 데이터 오류 확인 : 훈련데이터와 평가데이터의 데이터 비교를 통해 vaildation을 수행
 <img width="786" alt="스크린샷 2021-09-21 오후 2 47 33" src="https://user-images.githubusercontent.com/45285053/134118527-35a947b6-9f24-481a-9d6e-18f24beb691f.png">
 
+- 평가 데이터 스키마의 이상을 수정하고 반영
+<img width="1370" alt="스크린샷 2021-09-21 오후 2 56 40" src="https://user-images.githubusercontent.com/45285053/134119291-1c69ac74-8923-415b-b47c-77c4f867af63.png">
+
 **3. 데이터 드리프트, 스큐 확인**
+입력되는 데이터의 임계 : 드리프트
+입력되는 데이터의 편향 정도: 스큐
