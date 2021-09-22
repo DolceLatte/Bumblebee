@@ -6,6 +6,7 @@
 - [Machine Learning Pipeline](https://github.com/DolceLatte/Bumblebee/tree/main/MLOps_ML_Pipeline)
   - TensorFlow Data Validation : Data Vaildation tool in TFX
   - What if tool : Model understanding
+- [Model Serving]()
+  - Model Management : MLflow, BentoML
+  -  
 - [DevOps CI/CD in k8s](https://github.com/DolceLatte/Bumblebee/tree/main/DevOps)
-
-
