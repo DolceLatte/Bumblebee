@@ -1,6 +1,6 @@
 # Experiment Management : MNIST example classifier
 
-## What is Weight & Bias
+## What is Weight & Bias [wandb.ai](https://wandb.ai/site)
 <p>
 머신러닝을 위한 성능 시각화 도구, 어려운 머신 러닝 실험관리를 위해 사용할 수 있는 Developer tool
 </p>
