@@ -1,5 +1,12 @@
 # Experiment Management : MNIST example classifier
 
+## What is Weight & Bias
+<p>
+  머신러닝을 위한 성능 시각화 도구
+어려운 머신 러닝 실험관리를 위해 사용할 수 있는 툴
+실험 결과 매트릭의 정리,실험 결과의 재연, Hyperparameter Optimization등에 사용할 수 있는 Developer tool
+</p>
+
 ### 1. Use Weight & Bias for Experiment Management
 #### LOSS REPORT USING W&B : [Source Code](https://github.com/DolceLatte/Bumblebee/blob/main/Experiment%20Management/wandb_mnist.ipynb)
 ![image](https://user-images.githubusercontent.com/45285053/133961332-7e602bdd-b051-4ceb-b3c1-c842a51dfaa2.png)
