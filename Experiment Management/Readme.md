@@ -4,9 +4,10 @@
 <p>
 머신러닝을 위한 성능 시각화 도구, 어려운 머신 러닝 실험관리를 위해 사용할 수 있는 Developer tool
 </p>
+
 - 실험 결과 매트릭의 정리
 - 실험 결과의 재연
-- Hyperparameter Optimization**
+- Hyperparameter Optimization : 가장 큰 영향을 미치는 HP 확인 가능
 - GPU 사용률 역시 확인 가능
 
 
