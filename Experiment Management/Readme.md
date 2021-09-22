@@ -6,8 +6,8 @@
 </p>
 - 실험 결과 매트릭의 정리
 - 실험 결과의 재연
-**- Hyperparameter Optimization**
-**- GPU 사용률 역시 확인 가능**
+- Hyperparameter Optimization**
+- GPU 사용률 역시 확인 가능
 
 
 ### 1. Use Weight & Bias for Experiment Management
