@@ -35,3 +35,4 @@
 3. 모델 성능에 대한 직접적인 피드백이 어려움
 4. 머신러닝 모델에 대한 검증
 
+### How to figure out the challenges
