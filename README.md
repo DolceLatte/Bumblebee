@@ -20,11 +20,11 @@
 [Hidden Technical Debt in Machine Learning Systems](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)<br/>
 관련 논문도 있다. 
 
-###### Machine Learning Pipeline
+##### Machine Learning Pipeline
 머신러닝 모델의 관리를 위한 표준화된 프로세스 <br/>
 파이프라인의 설계를 통해 ** 생산성 향상, 성능에 대한 품질 관리, 장애 대응 능력 향상** 등의 이점을 얻을 수 있음 <br/>
 
-###### Challenge of Machine Learning
+##### Challenge of Machine Learning
 1. 빠른 데이터 변화
 2. 모델 성능 저하로 인한 재학습
 3. 모델 성능에 대한 직접적인 피드백이 어려움
