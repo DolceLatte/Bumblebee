@@ -16,7 +16,7 @@
 ## What is MLOps
 - 간단하게 말하면 프로덕션 레벨로 머신러닝 프로젝트를 끌어올리는 과정
 - 프로덕션 레벨에서 필요한 머신러닝 기술들을 파이프라인을 구현하여 기술 부채 해결, 모델 운영의 어려움을 해결
-[Hidden Technical Debt in Machine Learning Systems](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)<br/>
+- [Hidden Technical Debt in Machine Learning Systems](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)<br/>
 관련 논문도 있다. 
 
 #### Machine Learning Pipeline
