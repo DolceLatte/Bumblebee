@@ -26,11 +26,12 @@
 
 **진화하는 데이터셋, 매트릭에 대한 대처와 머신러닝 모듈의 trigger point에 대한 구체적인 정의가 되어있는 파이프라인을 통해 문제를 해결해야함**
 
-#### Machine Learning Pipeline
+### Good example : CI/CD and automated ML pipelines 
 ![캡처](https://user-images.githubusercontent.com/45285053/134847379-676cb203-25c7-44d3-9946-b0a5f07e1935.JPG)
 |:--:|
 |<b>[ML Pipeline](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)</b>|
 
+##### What is Pipeline?
 - 머신러닝 모델의 관리를 위한 표준화된 프로세스 <br/>
 - 파이프라인의 설계를 통해 생산성 향상, 성능에 대한 품질 관리, 장애 대응 능력 향상 등의 이점을 얻을 수 있음 
 
