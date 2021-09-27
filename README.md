@@ -17,6 +17,15 @@
 - 프로덕션 레벨에서 필요한 머신러닝 기술들을 파이프라인을 구현하여 기술 부채 해결, 모델 운영의 어려움을 해결
 - [Hidden Technical Debt in Machine Learning Systems](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)<br/>
 관련 논문도 있다. 
+
+#### Challenge of Machine Learning
+1. 빠른 데이터 변화
+2. 모델 성능 저하로 인한 재학습
+3. 모델 성능에 대한 직접적인 피드백이 어려움
+4. 머신러닝 모델에 대한 검증
+
+**--> 빠르게 진화하는 데이터셋, 매트릭에 대한 대처와 머신러닝 모듈의 trigger point에 대한 구체적인 정의가 되어있는 파이프라인을 통해 문제를 해결**
+
 #### Machine Learning Pipeline
 ![캡처](https://user-images.githubusercontent.com/45285053/134847379-676cb203-25c7-44d3-9946-b0a5f07e1935.JPG)
 |:--:|
@@ -24,10 +33,4 @@
 
 - 머신러닝 모델의 관리를 위한 표준화된 프로세스 <br/>
 - 파이프라인의 설계를 통해 생산성 향상, 성능에 대한 품질 관리, 장애 대응 능력 향상 등의 이점을 얻을 수 있음 
-#### Challenge of Machine Learning
-1. 빠른 데이터 변화
-2. 모델 성능 저하로 인한 재학습
-3. 모델 성능에 대한 직접적인 피드백이 어려움
-4. 머신러닝 모델에 대한 검증
 
-**--> 빠르게 진화하는 데이터셋, 매트릭에 대한 대처와 각 파이프라인 모듈의 trigger point에 대한 구체적인 정의를 통해 문제를 해결**
