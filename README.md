@@ -20,6 +20,9 @@
 관련 논문도 있다. 
 
 #### Machine Learning Pipeline
+
+
+[CI/CD 및 자동화된 ML 파이프라인](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
 - 머신러닝 모델의 관리를 위한 표준화된 프로세스 <br/>
 - 파이프라인의 설계를 통해 생산성 향상, 성능에 대한 품질 관리, 장애 대응 능력 향상 등의 이점을 얻을 수 있음 
 
