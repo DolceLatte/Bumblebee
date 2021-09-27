@@ -8,7 +8,7 @@
 - 실험 결과 매트릭의 정리
 - 실험 결과의 재연
 - Hyperparameter Optimization : 가장 큰 영향을 미치는 HP 확인 가능
-- GPU 사용률 역시 확인 가능
+- GPU 사용률 확인 가능
 
 
 ### 1. Use Weight & Bias for Experiment Management
