@@ -23,7 +23,7 @@
 ![캡처](https://user-images.githubusercontent.com/45285053/135272633-5c7dcba6-a02e-4cac-ad6f-efd1ae979c15.PNG)
 
 <br/>
-이러고 나면 kubeflow를 사용할 준비가 된 것
+이러고 나면 kubeflow를 사용할 준비가 된 것<br/>
 <br/>
 kubeflow의 경우 istio-ingressgateway를 통해서 UI에 접속할 수 있음, 해당 포트를 forwarding해서 접속할 수 있게 해야함
 
