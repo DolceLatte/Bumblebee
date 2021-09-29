@@ -13,7 +13,19 @@
 #### 2. Kubeflow 설치 
 필요한 것은 크게 두가지이다. <br/>
 - WSL 환경에 맞는 kfctl파일 (나는 kfctl_v1.0-0-g94c35cf_linux.tar.gz)
-압축을 풀고 "sudo mv ./kfctl /usr/local/bin/" 명령어를 통해 로컬에 kfctl명령어를 설치 
+<br/>압축을 풀고 "sudo mv ./kfctl /usr/local/bin/" 명령어를 통해 로컬에 kfctl명령어를 설치 
 - kfctl_k8s_istio파일 apply( kfctl_k8s_istio.v1.0.0.yaml)
 <br/>
 위 두개를 정상적으로 수행하고 나면 아래와 같이 kubeflow namespace에 정상적으로 pod들이 동작함 
+<br/>
+<br/>
+![캡처](https://user-images.githubusercontent.com/45285053/135272633-5c7dcba6-a02e-4cac-ad6f-efd1ae979c15.PNG)
+<br/>
+이러고 나면 kubeflow를 사용할 준비가 된 것
+<br/>
+kubeflow의 경우 istio-ingressgateway를 통해서 UI에 접속할 수 있음, 해당 포트를 forwarding해서 접속할 수 있게 해야함
+
+```python
+kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
+```
+
