@@ -19,7 +19,9 @@
 위 두개를 정상적으로 수행하고 나면 아래와 같이 kubeflow namespace에 정상적으로 pod들이 동작함 
 <br/>
 <br/>
+
 ![캡처](https://user-images.githubusercontent.com/45285053/135272633-5c7dcba6-a02e-4cac-ad6f-efd1ae979c15.PNG)
+
 <br/>
 이러고 나면 kubeflow를 사용할 준비가 된 것
 <br/>
@@ -28,4 +30,6 @@ kubeflow의 경우 istio-ingressgateway를 통해서 UI에 접속할 수 있음,
 ```python
 kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 ```
+![캡처](https://user-images.githubusercontent.com/45285053/135273133-abf1e87a-8d8b-4bc1-b174-6dabb3c5ea6c.PNG)
 
+<br/>여기까지 정상적으로 와야 kubeflow cluster를 사용할 수 있음
