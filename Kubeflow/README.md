@@ -1,6 +1,7 @@
 # Kubeflow start 
 
 ### Single node kubernetes cluster에 kubeflow 올리기
+###### 설치하다가 죽을 뻔;;
 
 #### 1. Docker Desktop에 k8s 설치
 [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)링크에 들어가서 docker desktop을 설치한다. (kubeflow는 리눅스에만 설치 가능하기 때문에 wsl컴포넌트를 모두 설치해야 함;)
