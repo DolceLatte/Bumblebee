@@ -1,9 +1,10 @@
 # Bumblebee
 ## 자료 정리 출처
+###### 커뮤니티 돌아다니면 좋은 글이 많은 것 같다
 - [MLOps KR](https://www.facebook.com/groups/748639598856641)
 - [https://github.com/chris-chris](https://github.com/chris-chris)
 - [k8skr](https://www.facebook.com/groups/k8skr)
-<br/>커뮤니티 많이 돌아다니면 좋은 글이 많은 것 같다
+
 ## MLOps Tech Stack
 
 - [Machine Learning Experiment Management](https://github.com/DolceLatte/Bumblebee/tree/main/Experiment%20Management)
