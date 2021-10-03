@@ -11,15 +11,18 @@ pytorch, tensorflow 등 다양한 딥러닝 프레임워크가 있음, 이를 �
 
 ### ONNX example : Pytorch2ONNX
 아래와 같이 onnx 라이브러리의 export 함수를 통해 모델을 ONNX 포맷으로 변형가능 <br/>
-'''python
+
+```python
 import torch.onnx
 torch.onnx.export(model,               # 실행될 모델
                   data,                         # 모델 입력값 (튜플 또는 여러 입력값들도 가능)
-                  "taco_burrito.onnx",   # 모델 저장 경로 (파일 또는 파일과 유사한 객체 모두 가능)
+                  "model.onnx",   # 모델 저장 경로 (파일 또는 파일과 유사한 객체 모두 가능)
                   export_params=True,        # 모델 파일 안에 학습된 모델 가중치를 저장할지의 여부
                   ##opset_version=10,          # 모델을 변환할 때 사용할 ONNX 버전
                   do_constant_folding=True,  # 최적화시 상수폴딩을 사용할지의 여부
                   input_names = ['input'],   # 모델의 입력값을 가리키는 이름
                   output_names = ['output'], # 모델의 출력값을 가리키는 이름
                   )
-'''
+```
+
+입력 데이터의 shape를 함께 넘겨주어 모델 입력 값을 정해줘야하나 보다
