@@ -57,6 +57,8 @@ kfp.Client()를 통해 실행하는 과정을 거쳐야 직접 UI에 실험이 �
 ![실험 창](https://user-images.githubusercontent.com/45285053/135752307-bee2b0da-c284-44b4-9877-770ada6c9087.PNG)
 
 <br/>
+- 아래와 같이 세부사항을 확인하면 log에 "HelloWorld" 가 찍힌 것을 볼 수 있다. 
+![asdasd](https://user-images.githubusercontent.com/45285053/135752340-0f54af33-0a64-4ef5-a81f-08488e254e62.PNG)
 
 <br/>
 
