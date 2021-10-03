@@ -10,7 +10,7 @@ pytorch, tensorflow 등 다양한 딥러닝 프레임워크가 있음, 이를 �
 [https://github.com/onnx/onnx](https://github.com/onnx/onnx) 여기에 너무 잘 나와있어서 정리가 따로 필요없는 듯
 
 ### ONNX example : Pytorch2ONNX
-- 예제에 사용된 모델은 사진이 타코인지, 브리또인지 분류하는 모델
+- 예제에 사용된 모델은 사진이 타코인지, 브리또인지 분류하는 모델 <br/>
 ![360](https://user-images.githubusercontent.com/45285053/135749903-e6b7fb9c-96cc-4aea-950b-5c1b9752fd16.jpg)
 
 - 아래와 같이 onnx 라이브러리의 export 함수를 통해 모델을 ONNX 포맷으로 변형가능 <br/>
