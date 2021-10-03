@@ -39,3 +39,16 @@ if __name__ == '__main__':
     )
 ```
 
+dsl.ContainerOp()를 통해 컴포넌트를 구현하고 @dsl.pipeline 데코레이터를 통해 파이프라인으로 반환하게 하는 코드 <br/>
+kubeflow 공식 예제에는 없는 코드가 아래인데, <br/>
+
+```python
+ kfp.Client(host=KUBEFLOW_HOST).create_run_from_pipeline_func(
+        hello_world_pipeline,
+        arguments={},
+        experiment_name="my first pipeline",
+    )
+```
+kfp.Client()를 통해 실행하는 과정을 거쳐야 직접 UI에 실험이 등록되는 듯 하다. 용도는 두가지가 있다고 함. <br/>
+- kfp.Client.create_experiment : 파이프 라인 experiment 을 만들고, experiment  개체를 반환합니다.
+- kfp.Client.run_pipeline 파이프 라인을 실행(run)하고 실행(run) 개체를 반환합니다.
