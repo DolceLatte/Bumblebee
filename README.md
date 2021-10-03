@@ -14,7 +14,7 @@
   - What if tool : Model understanding
 - [Model Serving]()
   - Network Exchange 
-    - Open Neural Network Exchange[ONNX](https://github.com/onnx/onnx)
+    - Open Neural Network Exchange [ONNX](https://github.com/onnx/onnx)
   - Model Management
     - BentoML
   - Example : [Model Serving using Flask](https://github.com/DolceLatte/Malware_Detector_w-CNN)
