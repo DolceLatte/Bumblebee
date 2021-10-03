@@ -52,3 +52,11 @@ kubeflow 공식 예제에는 없는 코드가 아래인데, <br/>
 kfp.Client()를 통해 실행하는 과정을 거쳐야 직접 UI에 실험이 등록되는 듯 하다. 용도는 두가지가 있다고 함. <br/>
 - kfp.Client.create_experiment : 파이프 라인 experiment 을 만들고, experiment  개체를 반환합니다.
 - kfp.Client.run_pipeline 파이프 라인을 실행(run)하고 실행(run) 개체를 반환합니다.
+
+어쨋든 잘 코드를 실행하고 나면 아래와 같이 실험 탭에 내가 구축한 실험이 등록되고<br/>
+![실험 창](https://user-images.githubusercontent.com/45285053/135752307-bee2b0da-c284-44b4-9877-770ada6c9087.PNG)
+
+<br/>
+
+<br/>
+
