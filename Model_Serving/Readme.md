@@ -28,7 +28,6 @@ torch.onnx.export(model,               # 실행될 모델
 - 입력 데이터의 shape를 함께 넘겨주어 모델 입력 값을 정해줘야하나 보다 <br/>
 - 모델을 변환하고 나면 반드시 모델이 잘 변환되었는지를 아래와 같이 확인해야 함 <br/>
 
-<br/>
 <img width="1094" alt="스크린샷 2021-10-03 오후 7 30 43" src="https://user-images.githubusercontent.com/45285053/135749783-2f8c64af-f9e2-4dca-9797-1aa34b4b4dc5.png">
 <br/>
 
