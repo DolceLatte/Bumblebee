@@ -5,6 +5,37 @@ Kubeflow는 컴포넌트 단위로 Machine Learning pipeline을 구축할 수 �
 + 실험과 파이프라인은 다른 것 같다.  <br/>
 + 파이프라인의 컴포넌트를 실험으로 등록해서 확인하는 것 같음, 실제로 어떻게 쓰는지 궁금하다.<br/>
 
-### hello_world
+## logging Hello_world in pipeline
 echo "hello world" [hello_world.py](https://github.com/kubeflow/pipelines/blob/0.1.40/samples/core/helloworld/hello_world.py) <br/>
 kubeflow github에 가면 예제 코드가 많이 나와있다. 
+
+```python
+import kfp
+from kfp import dsl
+
+KUBEFLOW_HOST = "http://127.0.0.1:31380/pipeline"
+
+def echo_op():
+    return dsl.ContainerOp(
+        name='echo',
+        image='library/bash:4.4.23',
+        command=['sh', '-c'],
+        arguments=['echo "hello world"']
+    )
+
+@dsl.pipeline(
+    name='My first pipeline',
+    description='A hello world pipeline.'
+)
+def hello_world_pipeline():
+    echo_task = echo_op()
+
+if __name__ == '__main__':
+    kfp.compiler.Compiler().compile(hello_world_pipeline, __file__ + '.yaml')
+    kfp.Client(host=KUBEFLOW_HOST).create_run_from_pipeline_func(
+        hello_world_pipeline,
+        arguments={},
+        experiment_name="my first pipeline",
+    )
+```
+
