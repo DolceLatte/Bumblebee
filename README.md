@@ -1,5 +1,5 @@
 # Bumblebee
-## 자료 정리 출처
+## Reference
 ###### 커뮤니티 돌아다니면 좋은 글이 많은 것 같다
 - [MLOps KR](https://www.facebook.com/groups/748639598856641)
 - [https://github.com/chris-chris](https://github.com/chris-chris)
