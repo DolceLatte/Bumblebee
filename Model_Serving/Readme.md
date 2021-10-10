@@ -34,3 +34,12 @@ torch.onnx.export(model,               # 실행될 모델
 <img width="1094" alt="스크린샷 2021-10-03 오후 7 30 43" src="https://user-images.githubusercontent.com/45285053/135749783-2f8c64af-f9e2-4dca-9797-1aa34b4b4dc5.png">
 <br/>
 
+
+## Model registry 
+### MLflow
+
+
+
+
+
+
