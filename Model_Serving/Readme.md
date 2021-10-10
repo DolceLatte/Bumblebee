@@ -39,5 +39,14 @@ torch.onnx.export(model,               # 실행될 모델
 ### MLflow
 원래는 pytorch ignite를 사용했는데, mlflow는 pytorch_lightning과 연동해서 사용해야 하는 듯 하다.<br/>
 
+### pytorch_lightning
+pytorch_lightning은 pytorch에 대한 인터페이스를 지원하는 파이썬 API
+- Model checkpointing
+- Early stopping
+- etc..
 
+다양한 인터페이스를 통해 머신러닝 개발에 도움을 줌<br/>
++ mlflow와 자동으로 연동되어 모델 학습, 결과, 서빙에 활용가능<br/>
 
+[https://www.mlflow.org/docs/latest/python_api/mlflow.pytorch.html](https://www.mlflow.org/docs/latest/python_api/mlflow.pytorch.html)<br/>
+잘된다고 하니.. 일단 모델을 학습시키고 레지스트리를 확인해보자
