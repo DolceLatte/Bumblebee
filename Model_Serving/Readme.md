@@ -49,4 +49,73 @@ pytorch_lightning은 pytorch에 대한 인터페이스를 지원하는 파이썬
 + mlflow와 자동으로 연동되어 모델 학습, 결과, 서빙에 활용가능<br/>
 
 [https://www.mlflow.org/docs/latest/python_api/mlflow.pytorch.html](https://www.mlflow.org/docs/latest/python_api/mlflow.pytorch.html)<br/>
-잘된다고 하니.. 일단 모델을 학습시키고 레지스트리를 확인해보자
+잘된다고 하니.. 일단 모델을 학습시키고 레지스트리를 확인해보자, 모델을 pytorch_lightning API를 통해서 학습시키면, 자동으로 log가 mlflow에 남는다. 
+
+```python
+class CNNClassifier_custom(pl.LightningModule):
+    def __init__(self,input_channel):
+        pass
+
+    def forward(self, x):
+        out = self.conv_module(x)
+        out = torch.flatten(out, 1)
+        y = self.generator(out)
+        #y = self.activation(y)
+        return y
+
+    def configure_optimizers(self):
+        learning_rate = 1e-5
+        optimizer = torch.optim.Adam(self.parameters(), lr= learning_rate)
+        return optimizer
+
+    def training_step(self, train_batch, batch_idx):
+        x, y = train_batch
+        out = self(x)
+        loss = F.cross_entropy(out, y)
+        # Use the current of PyTorch logger
+        self.log("train_loss", loss, on_epoch=True)
+        return loss
+
+    def validation_step(self, val_batch, batch_idx):
+        x, y = val_batch
+        out = self(x)
+        loss = F.cross_entropy(out, y)
+        preds = torch.argmax(out,dim=1)
+        acc = accuracy(preds,y)
+        # Use the current of PyTorch logger
+        self.log("val_loss", loss, on_epoch=True)
+        self.log("acc", acc, on_epoch=True)
+        return loss
+```
+
+위와 같이 작성해주고 <br/>
+
+```python
+    trainer = pl.Trainer(gpus=1,max_epochs=2)
+    mlflow.pytorch.autolog()
+    with mlflow.start_run() as run:
+        trainer.fit(cnn, train_dataloader=trn_loader, val_dataloaders=val_loader)
+
+    print_auto_logged_info(mlflow.get_run(run_id=run.info.run_id))
+
+    with mlflow.start_run() as run:
+        # Save PyTorch models to current working directory
+        mlflow.pytorch.save_model(cnn, "model")
+
+    for model_path in ["model"]:
+        model_uri = "{}/{}".format(os.getcwd(), model_path)
+        loaded_model = mlflow.pytorch.load_model(model_uri)
+        print(type(loaded_model))
+```
+
+main을 돌리면
+
+```python
+run_id: 87d864d55e79417b90cca1d58bed90d2
+artifacts: ['model/MLmodel', 'model/conda.yaml', 'model/data', 'model/requirements.txt']
+params: {'amsgrad': 'False', 'betas': '(0.9, 0.999)', 'epochs': '2', 'eps': '1e-08', 'lr': '1e-05', 'optimizer_name': 'Adam', 'weight_decay': '0'}
+metrics: {'acc': 0.9411223530769348, 'train_loss': 0.24587100744247437, 'train_loss_epoch': 0.24587100744247437, 'train_loss_step': 0.16865096986293793, 'val_loss': 0.2339341789484024}
+tags: {'Mode': 'training'}
+```
+
+이렇게 뜬다.
