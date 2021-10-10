@@ -122,4 +122,5 @@ tags: {'Mode': 'training'}
 ![캡처](https://user-images.githubusercontent.com/45285053/136686979-2f4b7561-4f62-4c22-8374-d8d6a4effee1.PNG)
 <br/>
 실험에 들어가면 내가 구현한 모델이 들어가 있는데, 여기서 register를 통해 모델 버전 관리를 할 수 있다.
+![캡처](https://user-images.githubusercontent.com/45285053/136687055-1ee1117f-4aaf-49b5-921f-0758c3ebd32d.PNG)
 
