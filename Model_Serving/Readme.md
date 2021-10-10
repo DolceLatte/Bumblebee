@@ -37,9 +37,7 @@ torch.onnx.export(model,               # 실행될 모델
 
 ## Model registry 
 ### MLflow
-
-
-
+원래는 pytorch ignite를 사용했는데, mlflow는 pytorch_lightning과 연동해서 사용해야 하는 듯 하다.<br/>
 
 
 
