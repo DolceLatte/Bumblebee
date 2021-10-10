@@ -119,3 +119,7 @@ tags: {'Mode': 'training'}
 ```
 
 이렇게 뜬다. mlflow ui를 통해 서버에 접속하면 내가 만든 모델에 대한 정보가 출력된다. 
+![캡처](https://user-images.githubusercontent.com/45285053/136686979-2f4b7561-4f62-4c22-8374-d8d6a4effee1.PNG)
+<br/>
+실험에 들어가면 내가 구현한 모델이 들어가 있는데, 여기서 register를 통해 모델 버전 관리를 할 수 있다.
+
