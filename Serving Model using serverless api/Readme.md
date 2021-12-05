@@ -8,7 +8,7 @@ python3 ../Machine_Learning_Pipeline/train.py
 ```
 - deploy model
 ```bash
-../Machine_Learning_Pipeline/google_function/depoly.sh
+./Machine_Learning_Pipeline/google_function/depoly.sh
 ```
 - predict example
 ```bash
