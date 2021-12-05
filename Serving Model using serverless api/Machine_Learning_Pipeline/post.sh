@@ -1,0 +1,1 @@
+curl -X POST https://asia-northeast1-solar-sylph-334110.cloudfunctions.net/predict -H 'Content-Type: application/json' -d '{"url":"https://raw.githubusercontent.com/DolceLatte/Bumblebee/main/2019_AI_Engineer_Party/digit_2.jpg"}'

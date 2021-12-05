@@ -1,0 +1,1 @@
+gcloud beta functions deploy predict --runtime python37 --trigger-http --memory 2048 --region asia-northeast1 --project solar-sylph-334110
