@@ -6,8 +6,11 @@ Machine Learning Serving Pipeline 구축
 ```python
 python3 ../Machine_Learning_Pipeline/train.py
 ```
-
 - deploy model
-```python
-python3 ../Machine_Learning_Pipeline/google_function/depoly.sh
+```bash
+../Machine_Learning_Pipeline/google_function/depoly.sh
+```
+- predict example
+```bash
+./Machine_Learning_Pipeline/post.sh
 ```
