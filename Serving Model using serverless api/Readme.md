@@ -14,3 +14,6 @@ python3 ../Machine_Learning_Pipeline/train.py
 ```bash
 ./Machine_Learning_Pipeline/post.sh
 ```
+
+#### reference
+- https://brunch.co.kr/@chris-song/91
