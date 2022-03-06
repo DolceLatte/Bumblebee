@@ -33,3 +33,13 @@ if __name__ == '__main__':
 - Log에 결과가 찍히는게 참 신기하다..
 
 학습된 모델은 output 아티펙트로 minio에 저장됨 
+- 접속을 위해서는 gateway를 열어야 함, 비번은 아래와 같이 pod에서 찾을 수 있음
+![미니오 접속 키](https://user-images.githubusercontent.com/45285053/156910299-10879d23-b95f-4d2a-917e-7a38c0f1bf28.PNG)
+![비번](https://user-images.githubusercontent.com/45285053/156910300-50c612a9-ae63-4da5-af97-f234ada6261e.PNG)
+
+- 아래에서 완성된 모델 다운 가능
+![모델 완성본](https://user-images.githubusercontent.com/45285053/156910301-bc9905dc-9573-4bbe-9015-5488c1bd990a.PNG)
+
+
+
+
