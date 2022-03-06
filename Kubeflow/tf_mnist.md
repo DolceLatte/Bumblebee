@@ -28,3 +28,8 @@ if __name__ == '__main__':
         experiment_name=EXPERIMENT_NAME)
 ```
 
+![1](https://user-images.githubusercontent.com/45285053/156910277-a4652154-f933-4efd-99b0-3e2062c2bda8.PNG)
+- 위와 같이 학습 DAG를 얻을 수 있음
+- Log에 결과가 찍히는게 참 신기하다..
+
+학습된 모델은 output 아티펙트로 minio에 저장됨 
