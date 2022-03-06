@@ -1,5 +1,6 @@
 ### Kubeflow기반 모델 학습 (Using mnist dataset)
 - mnist 데이터 다운로드 컨테이너와 케라스기반의 모델학습 컨테이너 파이프라인 구축
+- mnist 데이터 다운로드 결과를 다음 컨테이너의 입력으로 전송
 
 코드 출처
 https://github.com/chris-chris/kubeflow-tutorial/blob/master/lesson9_tf_mnist/tf_mnist.py
