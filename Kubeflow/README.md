@@ -34,3 +34,7 @@ kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 ![캡처](https://user-images.githubusercontent.com/45285053/135273133-abf1e87a-8d8b-4bc1-b174-6dabb3c5ea6c.PNG)
 
 <br/>여기까지 정상적으로 와야 kubeflow cluster를 사용할 수 있음
+
+
+### tf_mnist
+https://github.com/chris-chris/kubeflow-tutorial/blob/master/lesson9_tf_mnist/tf_mnist.py
