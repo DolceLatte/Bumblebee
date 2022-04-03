@@ -1,4 +1,7 @@
 # Bumblebee
+쿠버네티스, MLOps 등등 관심있는 내용 정리한 레포
+- bnm961126@gmail.com 
+
 ## Reference
 ###### 커뮤니티 돌아다니면 좋은 글이 많은 것 같다
 - [MLOps KR](https://www.facebook.com/groups/748639598856641)
