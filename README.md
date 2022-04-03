@@ -4,7 +4,7 @@
 - [MLOps KR](https://www.facebook.com/groups/748639598856641)
 - [https://github.com/chris-chris](https://github.com/chris-chris)
 - [k8skr](https://www.facebook.com/groups/k8skr)
-
+- [인강 보고 정리함](https://www.inflearn.com/course/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4-%EC%8B%A4%EB%AC%B4#curriculum)
 ## MLOps Tech Stack
 
 - [Machine Learning Experiment Management](https://github.com/DolceLatte/Bumblebee/tree/main/Experiment%20Management)
