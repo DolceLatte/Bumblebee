@@ -17,9 +17,12 @@ $ ./get_helm.sh
 (밑도 끝도 없이 설치가 안된다. )
 
 차트를 생성하면 아래와 같은 구조로 디렉터리를 다운받는다
+![image](https://user-images.githubusercontent.com/45285053/161426475-6ad34d0b-b468-4700-956e-681d8d1e3606.png)
 
 구체적인건 생략하고 values.yaml파일을 중심으로 템플릿 폴더 아래의 파일들과 결합해서 실제 쿠버네티스 파드를 띄우는 것 같다. 간단하게 리소느만 부여하고 아래와 같이 설치하면
+![image](https://user-images.githubusercontent.com/45285053/161426480-c5dba4e8-affd-4f31-b90e-23068dacf4ec.png)
 
 아맞다 포트포워딩
+![image](https://user-images.githubusercontent.com/45285053/161426481-65f941dc-a776-4b5e-9288-788096b65bfb.png)
 
 사실 이게 중요한지 몰랐는데, 쿠버네티스 특강 때 TA를 하는데, 개발자분이 엄청 강조하시더라. 오늘은 별게 없음
