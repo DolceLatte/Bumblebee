@@ -1,6 +1,6 @@
 # 어쩌다 보니 생긴 종이장
 
-#### 이펙티브 자바 공부하다가 파이썬은 어떨까 하고 만든 페이지
+## 이펙티브 자바 공부하다가 파이썬은 어떨까 하고 만든 페이지
 
 1. 생성자 대신 정적 팩토리 메소드를 사용해라
 
@@ -8,7 +8,7 @@
 
 자바는 서브 타입의 개념이 있음, 머 이런게 있다보니 생성자로 타입을 다룰 때 Object인지... 아닌지... 그니까 인스턴스 수준에서 제어할 수 있어야 한다? 이런게 동기인듯 <br/>
 
-기초자료형을 Boxing을 통해서 싱글톤처럼 하는게 중요할 수 있다. <br/>
+만약 새롭게 인스턴스를 만들 필요없다면 기초자료형을 Boxing을 통해서 싱글톤처럼 하는게 중요할 수 있다. <br/>
 
 만약에 코딩을 한다면...<br/>
 
@@ -17,4 +17,29 @@ public static Boolean valueOf(boolean b){
 		return b ? Boolean.TRUE : Boolean.FALSE;
 	}
 ```
+
+#### 만약에 파이썬은?
+일단 파이썬은 타입이고 뭐고 없음, 동적타입 언어지만.. 그래도 형변환을 암묵적으로 하지는 않는다.  
+
+일급 객체여서 모든 인스턴스가 객체로 다루어지는 듯함  
+
+그럼 위와 같은 정적 팩토리 메소드가 필요할까? -> 인스턴스 수준의 제어는 항상 필요함 
+
+코딩하면... (출처 )[https://wikidocs.net/69361]
+
+```python
+class Singleton(object):
+    def __new__(cls, *args, **kwargs):
+        if not hasattr(cls, "_instance"):         # Foo 클래스 객체에 _instance 속성이 없다면
+            print("__new__ is called\n")
+            cls._instance = super().__new__(cls)  # Foo 클래스의 객체를 생성하고 Foo._instance로 바인딩
+        return cls._instance                      # Foo._instance를 리턴
+
+    def __init__(self):
+        print("__init__ is called\n")
+
+s1 = Singleton()
+
+```
+__new__와 같은 메소드로 객체수준의 제어를 할 수 있다고 한다.
 
