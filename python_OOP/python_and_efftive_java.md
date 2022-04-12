@@ -25,7 +25,7 @@ public static Boolean valueOf(boolean b){
 
 그럼 위와 같은 정적 팩토리 메소드가 필요할까? -> 인스턴스 수준의 제어는 항상 필요함 
 
-코딩하면... (출처 )[https://wikidocs.net/69361]
+코딩하면... https://wikidocs.net/69361
 
 ```python
 class Singleton(object):
@@ -41,5 +41,9 @@ class Singleton(object):
 s1 = Singleton()
 
 ```
-__new__와 같은 메소드로 객체수준의 제어를 할 수 있다고 한다.
+__new__와 같은 메소드로 객체수준의 제어를 할 수 있다고 한다. 신기하네 방어적 프로그래밍을 할 때 쓴다고 함  
+
+이렇게 쓰고 나니 SFM이랑 싱글톤이랑 구분이 안간다.  
+
+
 
