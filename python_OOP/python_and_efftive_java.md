@@ -118,8 +118,44 @@ public abstract class A{
         return "hello world";
     }
 }
-```
 
+public class B extends A {
+    private final int o;
+
+    public static class Builder extends A.Builder<Builder> {
+        private int o = 0;
+	
+	//상위 계층의 빌더 
+        public Builder(double p) {
+            super(p);
+        }
+
+        public Builder o(int o) {
+            this.o = o;
+            return self();
+        }
+
+        @Override
+        public LocalProduct build() {
+            return new B(this);
+        }
+
+        @Override
+        protected Builder self() {
+            return this;
+        }
+    }
+
+    private B(Builder builder) {
+        super(builder);
+        o = builder.o;
+
+    }
+}
+
+
+```
+--> 어쨋든 하위 클래스에서 build와 self를 정의 해서 쓰면 되는 것 같음
 
 단점도 있음  
 - 빌더를 만드는 비용이 있고, 코드가 장황함
