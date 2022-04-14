@@ -99,7 +99,7 @@ public abstract class A{
             this.p = p;
         }
 
-        public T alcohol(double a) {
+        public T a(double a) {
             this.a = a;
             return self();
         }
