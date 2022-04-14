@@ -81,11 +81,9 @@ Abstract Factory pattern으로 구현된 빌더를 메소드의 인자로 던져
 이게 되려면 builder를 계층구조로 설계해야 한다.  
 
 ```java
-
 public abstract class A{
     private final double p;
     private final double a;
-   
 
     // 추상 클래스는 추상 Builder를 가진다. 서브 클래스에서 이를 구체 Builder로 구현한다.
     abstract static class Builder< T extends Builder<T>>{
@@ -118,42 +116,6 @@ public abstract class A{
         return "hello world";
     }
 }
-
-public class B extends A {
-    private final int o;
-
-    public static class Builder extends A.Builder<Builder> {
-        private int o = 0;
-	
-	//상위 계층의 빌더 
-        public Builder(double p) {
-            super(p);
-        }
-
-        public Builder o(int o) {
-            this.o = o;
-            return self();
-        }
-
-        @Override
-        public LocalProduct build() {
-            return new B(this);
-        }
-
-        @Override
-        protected Builder self() {
-            return this;
-        }
-    }
-
-    private B(Builder builder) {
-        super(builder);
-        o = builder.o;
-
-    }
-}
-
-
 ```
 --> 어쨋든 하위 클래스에서 build와 self를 정의 해서 쓰면 되는 것 같음
 
