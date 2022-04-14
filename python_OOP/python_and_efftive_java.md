@@ -70,6 +70,8 @@ __new__와 같은 메소드로 객체수준의 제어를 할 수 있다고 한�
 
 2. 그래서 빌더!
 - builder 클래스를 inner 클래스로 해서 생성자를 대신 부르게 함 static member class
+- 인자의 개수에 영향을 덜 받음
+- 무슨 인자인지 알기 쉬움
 
 Abstract Factory pattern과 빌더 패턴  
 
