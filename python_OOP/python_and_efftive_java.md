@@ -83,9 +83,9 @@ Abstract Factory pattern으로 구현된 빌더를 메소드의 인자로 던져
 ```java
 
 public abstract class A{
-    private final double price;
-    private final double alcohol;
-    private final double size;
+    private final double p;
+    private final double a;
+   
 
     // 추상 클래스는 추상 Builder를 가진다. 서브 클래스에서 이를 구체 Builder로 구현한다.
     abstract static class Builder< T extends Builder<T>>{
