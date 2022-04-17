@@ -128,5 +128,12 @@ public abstract class A{
 이게 결국 타입이 없다보니 신경을 안써도 되는 것 같음
 
 
+### 3. private 생성자와 enum 타입은 싱글톤 속성을 강제하라
+
+싱글톤? : 객체를 한번만 생성하는 패턴 -> private 생성자를 통해 구현가능  
+
+type based enforcement가 중요하다 -> enum.  
+
+
 
 
