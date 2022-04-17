@@ -134,6 +134,39 @@ public abstract class A{
 
 type based enforcement가 중요하다 -> enum.  
 
+static factory method를 통해 구현가능 -> 싱글톤의 의미를 약화할 수 있음 메소드내부에서 조작이 가능해서  
+직렬화를 통해 강화 가능  
+
+Singleton by Enum.  
+
+내부 필드 접근과 동등한 수준, 리플렉션에 방해받지 않음, 단일 객체를 쉽게 보장 
+
+#### 만약에 파이썬은?
+위에 말한 것 처럼 __new__를 통해서 구현하면 되는 것 같다..   
+
+파이썬도 Enum이 있기는 하다.  
+
+```python
+class Port(Enum):
+    SSH = 22
+    Telnet = 23
+    SMTP = 25
+    HTTP = 80
+    HTTPS = 443
+```
+위 처럼 비슷한 객체를 모아 두기 좋은 것 같다. 근데 이게.. 결국 연산자로 비교하면 의미가 없는 것 같다.  
+
+### 4. private 생성자는 아예 만들지 말자
+
+
+
+
+
+
+
+
+
+
 
 
 
