@@ -156,15 +156,49 @@ class Port(Enum):
 ```
 위 처럼 비슷한 객체를 모아 두기 좋은 것 같다. 근데 이게.. 결국 연산자로 비교하면 의미가 없는 것 같다.  
 
-### 4. private 생성자는 아예 만들지 말자
+### 4. private 생성자로 객체를 아예 만들지 말자
+객체를 아예 만들지 않을 때, private 생성자로 만들자
+throw new AssertionError(); 로 객체 생성을 막자
 
+### 5. 자원을 직접 명시하지 말고 의존객체 주입을 사용하라
 
+자원에 의존하는 객체를 생성하게 되면 객체를 확장하는데 어려움이 있다.  
+자원을 외부에서 주입하는 방식으로 코딩하면 확장성이 더 좋음!  
 
+```java
+Mosaic create(Supplier<? extends Tile> tileFactory) { ... } 
+```
+팩토리를 주입하는 것도 매우 좋은 방법  
 
+### 6. 필요없는 객체는 만들지 말자
+웬만하면 재사용하자! 객체를 만드는 것은 비용이 매우 큼
 
+1. Immutable Object
+2. mutable Object
+3. Auto boxing
 
+Immutable Object  
+-> 재사용할 수 있다.   
+SFM로 만들면 된다!  
 
+Mutable Object  
+```java
+// Reusing expensive object for improved performance
+public class RomanNumerals {
+		private static final Pattern ROMAN = Pattern.compile(
+		"^(?=.)M*(C[MD]|D?C{0,3})"
+		+ "(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$");
 
+		static boolean isRomanNumeral(String s) {
+				return ROMAN.matcher(s).matches();
+		}
+}
+```
+예를 들어 정규표현식의 경우 패턴에 맞는 객체를 만드는 비용이 크기 때문에 재사용하는 것이 유리함 : 거꾸로 패턴을 객체화해서 비교하자  
+비싼건 캐싱하자 
+아니면 어댑터 패턴 -> 성능은 비슷  
+
+Auto boxing
 
 
 
