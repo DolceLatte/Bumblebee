@@ -199,8 +199,7 @@ public class RomanNumerals {
 아니면 어댑터 패턴 -> 성능은 비슷  
 
 Auto boxing
-
-
+의도치 않게 오토박싱하지 않게 조심하자  
 
 
 
