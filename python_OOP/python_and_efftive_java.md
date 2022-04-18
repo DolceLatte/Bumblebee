@@ -201,5 +201,22 @@ public class RomanNumerals {
 Auto boxing
 의도치 않게 오토박싱하지 않게 조심하자  
 
+### 7. 다 쓴 객체 참조를 해제하라
+자바의 경우 가비지 컬렉터를 통해 쓰지 않는 객체를 없앨 수 있음 -> 그래도 항상 메모리 문제가 있음  
+마크앤 스윕 알고리즘은 참조가 제거되어야 가비지 컬렉터가 인식할 수 있다.  
+
+내가 사용하지 않는 메모리는 반드시 Null처리를 통해 메모리를 없애야 함 --> 프로파일러를 쓰는 것도 방법  
+
+자바는 Reference를 관리하는 체계? 같은게 있음  
+
+```java
+WeakReference<A> obj;
+SoftReference<A> obj;
+```
+
+예를 들어 Out of Memory가 나면, soft Reference로 만든 객체를 날림  
+
+
+
 
 
