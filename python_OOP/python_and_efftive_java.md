@@ -216,7 +216,7 @@ SoftReference<A> obj;
 
 예를 들어 Out of Memory가 나면, soft Reference로 만든 객체를 날림  
 
-
+### 8. finalizer와 cleaner 사용을 피하라
 
 
 
