@@ -218,5 +218,18 @@ SoftReference<A> obj;
 
 ### 8. finalizer와 cleaner 사용을 피하라
 
+```java
+@Override
+public void finalize() {
+    // ...
+}
+```
+위와 같이 소멸자를 자바에서 구현할 수 있음. 근데..? 별로임 왜? GC의 대상이 되어야 결국 사라지는데, 언제 사라질지 내가 보장하기 어려움  
+
+그리고 아예 안불릴 수 있음.  
+
+그러니까 개발자가 dispose, close 알아서 잘 부르자 
+
+계층구조에서 finalize 잘 부르자  
 
 
