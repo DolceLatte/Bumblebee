@@ -237,6 +237,15 @@ public void finalize() {
 AutoCloseable 인터페이스를 통해서 닫아야하는 객체를 잘 닫자
 
 
+#### 파이썬도..소멸자가 있나?
 
+```python
+class A:
+	...
+	def __del__(self):
+		pass
+		...
+```
+오 몰랐는데 위와 같은 정의를 통해 구현할 수 있다.  
 
 
