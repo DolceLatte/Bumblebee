@@ -232,4 +232,11 @@ public void finalize() {
 
 계층구조에서 finalize 잘 부르자  
 
+### 9. try-finally보다 try-with-resources를 사용하라
+
+AutoCloseable 인터페이스를 통해서 닫아야하는 객체를 잘 닫자
+
+
+
+
 
