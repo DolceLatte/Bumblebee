@@ -22,3 +22,7 @@ public int hashCode() {
     return result;
 }
 ```
+### 파이썬의 equals 비교
+파이썬에는 is와 ==이 있음 이중 is 연산자는 identity를 비교  
+즉, 같은 객체라면 true를 반환 
+==의 경우 동등성을 비교, 클래스 내부의 __eq__의 내용을 기반으로 두 객체의 동등성을 비교함
